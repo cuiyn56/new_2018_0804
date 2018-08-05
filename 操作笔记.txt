@@ -1,0 +1,19 @@
+《git + github的入门教程》
+
+1、命令初始化git
+
+建立1个文件夹 → git bash here → 命令创建git分支 → echo "# dqp_0" >> REDEME.md
+
+初始化git存储库 → git init → 给git添加文件README.md → git add README.md → 托付（？？？） → git commit -m "玩儿"
+
+添加远程仓库 → git remote add origin https://github.com/nongshuqiner/-git-.git → 提交分支 → git push -u origin master
+
+
+《git book》
+
+1. 起步
+
+1.1  关于版本控制
+
+
+
