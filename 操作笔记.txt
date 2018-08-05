@@ -1,19 +1,83 @@
-《git + github的入门教程》
-
-1、命令初始化git
-
-建立1个文件夹 → git bash here → 命令创建git分支 → echo "# dqp_0" >> REDEME.md
-
-初始化git存储库 → git init → 给git添加文件README.md → git add README.md → 托付（？？？） → git commit -m "玩儿"
-
-添加远程仓库 → git remote add origin https://github.com/nongshuqiner/-git-.git → 提交分支 → git push -u origin master
-
 
 《git book》
 
 1. 起步
 
 1.1  关于版本控制
+     版本控制是一种记录一个或若干文件内容变化，以便将来查阅特定版本修订情况的系统。
+	 1、本地版本控制系统
+	 2、集中化的版本控制系统
+	 3、分布式版本控制系统
+	 
+1.2  Git简史
+1.3  Git基础
+     
+	 1、处理数据的方式：快照流
+	    保存项目状态时，对当时的全部文件制作一个快照，并保存这个快照的索引。
+		
+	 2、Git文件的三种状态
+	 ①committed（已提交）：数据已经安全的保存在本地数据库中
+	 ②modified（已修改）：修改了文件，但还没保存到数据库中
+	 ③staged（已暂存）：对一个已修改文件的当前版本做了标记，使之包含在下次提交的快照中
+	 ↓↓
+	 ①Git仓库：用来保存项目的元数据和对象数据库的地方
+	 ②工作目录：对从数据库中提取出来的文件进行使用或修改
+	 ③暂存区域：也叫“索引”，是一个保存了下次将提交的文件列表信息的文件
+	 
+1.4  命令行
+	 1、命令行模式【所有命令】
+	 2、GUI模式【所有命令的某个子集】
+	 
+1.5  安装Git
+     1、Git for Windows √
+     2、Github for Windows √
+	 
+1.6  初次运行Git前的配置
+     
+	 1、环境配置：git config 工具
+	 ①/etc/gitconfig 文件：包含系统上每一个用户及他们仓库的通用配置；如果使用带有 --system 选项的 git config 时，会从此文件读写配置变量。
+	 ②~/.gitconfig 或 ~/.config/git/config 文件：只针对的当前用户；可以传递 --global 选项读写文件。--global 是一劳永逸的。
+	 ③./git/config 文件：针对该仓库
+	 
+	 2、用户信息：
+	 ① git config ——global user.name "deslielove"
+	 ② git config ——global user,email 502029421@qq.com
+	 
+	 3、文本编辑器
+	 git config --global core.editor Notepad
+	 
+     4、检查当前配置信息
+ 	 git config --list
+	 git congig username【检查某一项配置】
+	
+1.7  获取帮助
+     1、git help <verb>
+	 2、git <verb> --help
+	 3、man git-<verb>
+	 4、git help config
 
+2.Git基础
+
+2.1  获取Git仓库
+
+     1、在现有目录中初始化仓库
+	 
+	 对现有项目进行管理：进入该项目目录 → git init → 创建一个名为 .git 的子目录 → git add（跟踪文件） → git commit （提交文件）
+	 git add "xxxx.txt"
+	 git commit -m "intitial project version"
+	 
+	 2、克隆现有的仓库：git clone
+	
+	 命令格式：git clone [url]
+	 git clone https://www.cnblogs.com/andfly/p/6629102.html
+	 
+2.2  记录每次更新到仓库
+
+	 
+	 
+
+	 
+	  
+	 
 
 
