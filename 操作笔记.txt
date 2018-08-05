@@ -72,7 +72,10 @@
 	 git clone https://www.cnblogs.com/andfly/p/6629102.html
 	 
 2.2  记录每次更新到仓库
-
+     
+	 1、查看当前文件状态
+	 git status
+	 
 	 
 	 
 
